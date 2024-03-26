@@ -1,0 +1,27 @@
+body
+  { background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p1/7875128-imagele-realiste-de-sushi-avec-des-batons-de-bambou-sur-le-fond-de-bambou-et-cercle-rouge-coup-de-pinceau-restaurant-sushi-menu-fond-publicite-sushi-vectoriel.jpg");
+    }
+
+  .boite {
+    position: relative;
+    background-color:white;
+    padding: 2rem;
+    text-align: left;
+    max-width: 500px;
+    margin-left: 500px;
+  }
+  
+  .boite::before {
+    content: "";
+  
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    right: 5px;
+    width: 50%;
+    top: 80%;
+    max-width: 200px;
+  
+    box-shadow: 0px 13px 10px black;
+    transform: rotate(4deg);
+  }

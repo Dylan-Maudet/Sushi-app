@@ -1,0 +1,7 @@
+<body>
+    <div>
+        <div class="boite" *ngFor="let box of boxes | keyvalue">
+            <app-card-sushi-box [box]="box.value"></app-card-sushi-box>
+        </div>
+    </div>
+</body>

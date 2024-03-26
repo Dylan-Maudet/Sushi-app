@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <h1>Sushi-Fast</h1>
+        <div class="column">
+            <a href="/boxes"><input class="styled" type="button" value="Voir nos boxes"/></a>
+        </div>
+        <div class="column">
+            <a href="/panier"><input class="styled" type="button" value="Consulter le panier"/></a>
+        </div>
+        <div class="column">
+            <a href="/rgpd"><input class="styled" type="button" value="Rgpd et politique de confidentialité"/></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
